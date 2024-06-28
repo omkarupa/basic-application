@@ -5,10 +5,14 @@ pipeline {
   }
   stages {
     stage('SCM checkout'){
-      git branch: 'main', url:'https://github.com/omkarupa/basic-application'
+      steps{
+        git branch: 'main', url:'https://github.com/omkarupa/basic-application'
+      }
     }
     stage('Compile-Package'){
-      sh 'mvn package'
+      steps{
+          sh 'mvn package'
+      }
     }
   }
 }
