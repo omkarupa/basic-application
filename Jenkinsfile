@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Compile-Package'){
       steps{
-          bat'mvn clean compile'
+          mvn clean compile
       }
     }
   }
