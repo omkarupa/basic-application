@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    PATH = "C:\Program Files\apache-maven-3.9.8\bin"
+    PATH = "C:\\Program Files\\apache-maven-3.9.8\\bin"
   }
   node {
     stage('SCM checkout'){
